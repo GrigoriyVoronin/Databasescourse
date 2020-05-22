@@ -1,0 +1,14 @@
+DROP if EXISTS media;
+CREATE TABLE media(
+id SERIAL PRIMARY KEY, 
+title VARCHAR(255),
+description VARCHAR(255),
+key_words VARCHAR(255),
+path VARCHAR(255),
+user_id INT UNSIGNED
+);
+
+DROP if EXISTS users;
+CREATE TABLE users(
+id SERIAL PRIMARY KEY,
+media_id INT UNSIGNED);
